@@ -1,12 +1,6 @@
 steps:
-# Install dependencies
-- name: node
-  entrypoint: npm
+- name: 'gcr.io/cloud-builders/npm'
   args: ['install']
-# Run custom commands
-- name: node
-  entrypoint: npm
-  args: ['run', 'build']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
