@@ -1,6 +1,11 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ["run", "create-env"]
+  env:
+    - 'DB_URI=${_DB_URI}'
+    - 'NODE_ENV=${_NODE_ENV}'
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"

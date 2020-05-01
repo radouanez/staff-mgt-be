@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "tsc",
+    "create-env": "printenv > .env",
     "start": "node ./build/server.js",
     "test": "npm test",
     "gcp-build": "tsc -p .",
