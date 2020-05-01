@@ -1,8 +1,18 @@
+'use strict';
 const express = require('express');
 
 const app = express();
-app.use('/', (req, res) => {
-  res.status(200).json('hello world')
-})
-app.listen(3000, () => {
-  console.log('listening on port 3000')
+
+app.get('/', (req, res) => {
+  res.status(200).send('Hello, world!').end();
+});
+
+// Start the server
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+  console.log('Press Ctrl+C to quit.');
+});
+
+
+module.exports = app;
