@@ -1,8 +1,8 @@
 {
-  "name": "express-typescript-boilerplate",
+  "name": "staff-mgt-be",
   "version": "1.0.0",
-  "description": "Boilerplate project for building RESTful APIs and microservices using Node.js, Express and MongoDB",
-  "main": "./build/server.js",
+  "description": "RESTful APIs using Node.js, Express and MongoDB",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
     "start": "node ./build/server.js",
@@ -10,19 +10,11 @@
     "gcp-build": "tsc -p .",
     "deploy": "gcloud app deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/radouanez/express-typescript-boilerplate.git"
-  },
   "keywords": [
     "expressjs"
   ],
   "author": "radouane.programming@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/radouanez/express-typescript-boilerplate/issues"
-  },
-  "homepage": "https://github.com/radouanez/express-typescript-boilerplate#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "compression": "^1.7.4",
