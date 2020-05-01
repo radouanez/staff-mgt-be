@@ -2,7 +2,7 @@
   "name": "express-typescript-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate project for building RESTful APIs and microservices using Node.js, Express and MongoDB",
-  "main": "server.js",
+  "main": "./build/server.js",
   "scripts": {
     "build": "tsc",
     "start": "node ./build/server.js",
